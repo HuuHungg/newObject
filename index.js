@@ -1,30 +1,14 @@
-/// Object literal
+function hightlight([first, ...strings], ...values) {  
+    return values.reduce(
+        (acc,curr) =>[...acc, `<span>${curr}</span>`,strings.shift()],
+        [first]
+    )
+    .join('')
+}   
 
-// 
+var brand = 'F8';
+var course = 'Javascript';
 
-let name = 'Khoa hoc ReactJS from zero to hero'
-let price = 'Kho hoc co gia la: 1000$'
-
-var Course = {
-   name,
-   price,
-    getName: function() {
-        return this.name
-    }
-
-}
-
-console.log(Course.getName())
-
-
-let fileName = 'new-name'
-let filePrice = 'price'
-
-var Course = {
-    [fileName]: 'Javascript bazzic ',
-    [filePrice]: 'Khoa hoc price',
-
-}
-
-console.log(Course)
+const html =  hightlight`Hoc lap trinh ${course} tai ${brand}!`;
+console.log(html)
 
