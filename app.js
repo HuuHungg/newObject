@@ -1,20 +1,12 @@
-let arr = ['Javascript', 'PHP', 'Ruby', 'Reactjs', 'Nodejs']
-let arrLength = arr.length;
+let car = ['BMW', 'VOLVO','SAAB','FORD']
 
-let i = 0
-for( let i = 0; i < arrLength; i++) {
-    console.log(arr[i])
-}
-
-console.log('Check value', i)
-
-
-const car = ["BMw", "VoVol", "Saab", "Ford"]
-
-let i = 0
+let i = 0;
 let carLength = car.length
+let test = ''
 
-for ( ; i < carLength; i++) {
-    
+for( ; i < carLength; ) {
+    i++;
+    test += car[i] + '<br>'
 }
 
+document.getElementById("demo").innerHTML = test
