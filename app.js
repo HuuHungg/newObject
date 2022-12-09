@@ -18,3 +18,14 @@ let courses = course.length
 for( let i = 0; i < courses; i++) { 
     console.log(car[i])
 }
+
+
+let animal = function(name,weight,leg) {
+    this.name = name
+    this.weight = weight
+    this.leg = leg
+}
+
+let vetAnimal = new animal ("Prrot", 200, 2)
+
+console.log(vetAnimal)
