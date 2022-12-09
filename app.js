@@ -1,9 +1,20 @@
-"uss strict"
+let arr = ['Javascript', 'PHP', 'Ruby', 'Reactjs', 'Nodejs']
+let arrLength = arr.length;
 
-{
-    function sum(a,b) {
-        return a + b
-    }
-    console.log(sum(9,6))
+let i = 0
+for( let i = 0; i < arrLength; i++) {
+    console.log(arr[i])
+}
+
+console.log('Check value', i)
+
+
+const car = ["BMw", "VoVol", "Saab", "Ford"]
+
+let i = 0
+let carLength = car.length
+
+for ( ; i < carLength; i++) {
+    
 }
 
