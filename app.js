@@ -10,3 +10,11 @@ for( ; i < carLength; ) {
 }
 
 document.getElementById("demo").innerHTML = test
+
+
+let course = ["Javascript", "PHP", "Course"]
+let courses = course.length
+
+for( let i = 0; i < courses; i++) { 
+    console.log(car[i])
+}
