@@ -1,31 +1,29 @@
-let car = ['BMW', 'VOLVO','SAAB','FORD']
+console.log('Hello world from HTML')
+let arrTop4 = ['liv', 'chelsea', 'Mu', 'Man city']
+let arrLength = arrTop4.length
+let i = 0
+while(i < arrLength) {
 
-let i = 0;
-let carLength = car.length
-let test = ''
-
-for( ; i < carLength; ) {
-    i++;
-    test += car[i] + '<br>'
+    if(arrTop4[i].length === 8) {
+        console.log('Top',i + 1,arrTop4[i])
+    }else if(arrTop4[i].length === 3) {
+        console.log('Top', i + 1, arrTop4[i])
+    }else {
+        
+    }
+    i++
 }
 
-document.getElementById("demo").innerHTML = test
-
-
-let course = ["Javascript", "PHP", "Course"]
-let courses = course.length
-
-for( let i = 0; i < courses; i++) { 
-    console.log(car[i])
+let time = 20
+if(time < 10) {
+    console.log('good morning')
+}else if( time < 13) {
+    console.log('good afternul')
+}else {
+    console.log('I do not no')
 }
 
 
-let animal = function(name,weight,leg) {
-    this.name = name
-    this.weight = weight
-    this.leg = leg
-}
 
-let vetAnimal = new animal ("Prrot", 200, 2)
 
-console.log(vetAnimal)
+
