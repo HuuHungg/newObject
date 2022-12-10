@@ -1,29 +1,50 @@
-console.log('Hello world from HTML')
-let arrTop4 = ['liv', 'chelsea', 'Mu', 'Man city']
-let arrLength = arrTop4.length
-let i = 0
-while(i < arrLength) {
+let text = '';
+let a = 0
+switch (a) {
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+    break;
+  default:
+    text = "Looking forward to the Weekend";
+}
+document.getElementById("demo").innerHTML = text;
+console.log('Text: ', text,)
 
-    if(arrTop4[i].length === 8) {
-        console.log('Top',i + 1,arrTop4[i])
-    }else if(arrTop4[i].length === 3) {
-        console.log('Top', i + 1, arrTop4[i])
-    }else {
-        
-    }
-    i++
+
+let day = '';
+let time  = 10
+
+switch (time) {
+
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+    break;
+    default:
+    day = '今日は木曜日です朝から今まで雨が降っています'
+
 }
 
-let time = 20
-if(time < 10) {
-    console.log('good morning')
-}else if( time < 13) {
-    console.log('good afternul')
-}else {
-    console.log('I do not no')
-}
-
-
-
-
+document.getElementById("demo").innerHTML = "Today is " + day;
+console.log('To day is', day, )
 
